@@ -491,7 +491,7 @@ def FindService(update: Update, context):
 def get_services(update: Update, context):
     update.message.reply_text('Сбор информации о запущенных процессах.')
     
-    result = ssh_connect(update, "systemctl list-units --type=service --all")
+    result = ssh_connect(update, "systemctl list-units --type=service --state=running")
     if result:
         result_lines = result.split('n')
         chunk = ''
