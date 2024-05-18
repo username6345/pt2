@@ -340,7 +340,7 @@ def get_repl_logs (update: Update, context):
 
  
 def helpCommand(update: Update, context):
-    update.message.reply_text('Help!  /checkPassword /findEmails  /findPhoneNumbers /get_release /get_uname /get_uptime /get_df /get_free /get_mpstat /get_w /get_auths /get_critical /get_ps /get_ss /get_apt_list /get_services  /get_repl_logs')
+    update.message.reply_text('Help!  /checkPassword /find_email /findPhoneNumbers /get_release /get_uname /get_uptime /get_df /get_free /get_mpstat /get_w /get_auths /get_critical /get_ps /get_ss /get_apt_list /get_services  /get_emails /get_phone_numbers /get_repl_logs')
 
 
 def get_release(update: Update, context):
